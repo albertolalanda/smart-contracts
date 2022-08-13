@@ -1,13 +1,3 @@
-# Sample Hardhat Project
+# NumbersCoin
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat help
-npx hardhat test
-GAS_REPORT=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+0x9775f51536f87DCB7F7faaa9E0a1d2BC55D4FC16 - Deployed on Polygon Mumbai testnet

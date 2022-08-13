@@ -1,0 +1,9 @@
+# To load the variables in the .env file
+
+source .env
+
+# To deploy and verify our contract
+
+forge script script/Dex.s.sol:DexFactoryScript --rpc-url $ALCHEMY_API_KEY_FACTORY --private-key $MUMBAI_PRIVATE_KEY --broadcast --verify --etherscan-api-key $POLYSCAN_API_KEY -vvvv
+
+forge script script/Dex.s.sol:DexRouterScript --rpc-url $ALCHEMY_API_KEY_FACTORY --private-key $MUMBAI_PRIVATE_KEY --broadcast --verify --etherscan-api-key $POLYSCAN_API_KEY -vvvv

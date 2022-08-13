@@ -8,7 +8,8 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Capped.sol";
 
 /// @title A token to buy the NumbersNFT
 /// @author Alberto Lalanda
-/// @notice Capped supply at 1 million. Contract inheriting from OpenZeppelin contracts.
+/// @notice Capped supply at 1 million.
+/// @notice ERC20. Contract inheriting from OpenZeppelin contracts.
 contract Num is ERC20, Ownable, ERC20Capped, ERC20Permit {
     /// @notice Max supply capped on one million, hardcoded
     constructor()

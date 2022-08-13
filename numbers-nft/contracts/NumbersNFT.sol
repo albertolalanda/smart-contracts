@@ -11,8 +11,8 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 
 /// @title NumbersNFT
 /// @author Alberto Lalanda
-/// @notice NFTs of images of numbers saved on IPFS
-/// @notice Capped supply at 1 million. Contract inheriting from OpenZeppelin contracts.
+/// @notice NFTs of images of numbers hosted with IPFS
+/// @notice
 
 contract NumbersNFT is ERC721, ERC721Royalty, ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;

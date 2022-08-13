@@ -1,0 +1,5 @@
+# Dex V2
+
+Deployed on Polygon Mumbai testnet
+DexV2Factory - 0x5fBE24c79EBCeB20028C275E5798841a67dD4048
+DexV2Router - 0x9782Bc2371C7Ba32834682B20f4C7bCA614cF9B3

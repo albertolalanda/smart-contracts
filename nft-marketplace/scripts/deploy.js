@@ -7,20 +7,21 @@
 const hre = require("hardhat");
 
 async function main() {
-  const currentTimestampInSeconds = Math.round(Date.now() / 1000);
-  const ONE_YEAR_IN_SECS = 365 * 24 * 60 * 60;
-  const unlockTime = currentTimestampInSeconds + ONE_YEAR_IN_SECS;
+  const [deployer] = await ethers.getSigners();
 
-  const lockedAmount = hre.ethers.utils.parseEther("1");
+  console.log("Deploying contracts with the account:", deployer.address);
 
-  const Lock = await hre.ethers.getContractFactory("Lock");
-  const lock = await Lock.deploy(unlockTime, { value: lockedAmount });
+  console.log("Account balance:", (await deployer.getBalance()).toString());
 
-  await lock.deployed();
+  const Market = await ethers.getContractFactory("Market");
+  const market = await Market.deploy(
+    "0xd75c45487BC6Bf1C9cf875857B69010e0827F69e",
+    5,
+    "0x9775f51536f87DCB7F7faaa9E0a1d2BC55D4FC16"
+  );
 
-  console.log("Lock with 1 ETH deployed to:", lock.address);
+  console.log("NFT Marketplace address:", market.address);
 }
-
 // We recommend this pattern to be able to use async/await everywhere
 // and properly handle errors.
 main().catch((error) => {
