@@ -28,3 +28,7 @@ If something goes wrong **Emergency Delisting** can be enabled, allowing anyone 
 
 Descentralized exchange to host liquidity for the NumbersCoin.  
 Fork of UniswapV2, adapted to build with Solidity compiler 0.8+
+
+### Rock-Paper-Scissors [Link](https://github.com/albertolalanda/rock-paper-scissors)
+
+Solidity smart contract of a rock, paper and scissors game.
